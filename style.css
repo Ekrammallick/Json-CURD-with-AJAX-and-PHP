@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+button.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.delete-button:hover {
+    background-color: #d32f2f;
+/* Der vorhandene CSS-Code bleibt unverändert */
+
+/* Hinzufügen eines neuen CSS-Stils für das Datumsformat */
+table th:nth-child(3),
+table td:nth-child(3) {
+    text-align: center;
+}
+
+table td:nth-child(3) {
+    white-space: nowrap;
+}
+
+table td:nth-child(3) input {
+    display: none;
+}
+
+table td:nth-child(3)::after {
+    content: attr(data-date);
+    display: block;
+}
